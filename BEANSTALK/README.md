@@ -144,3 +144,10 @@ From Uniswap V2: BEAN 3 To BeanstalkFlashloanContract For 32,511,085.804104 ($4,
 ```
 
 我们也只复现到这一步。合约中写了运行到那一步的序号
+
+
+参考:
+https://github.com/JIAMING-LI/BeanstalkProtocolExploit/
+https://blockapex.io/beanstalk-hack-analysis-poc/
+https://github.com/Rivaill/CryptoVulhub/blob/master/BeanstalkFarms20220417
+https://learnblockchain.cn/article/3921
